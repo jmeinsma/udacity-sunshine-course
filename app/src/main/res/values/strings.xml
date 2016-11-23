@@ -18,6 +18,12 @@
     <string name="pref_location_key" translatable="false">location</string>
     <!--Default postal code for location preference [CHAR LIMIT=NONE]-->
     <string name="pref_location_default" translatable="false">9356</string>
+    <!-- Key name for temperature unit preference in SharedPreferences [CHAR LIMIT=NONE] -->
+    <string name="pref_units_key" translatable="false">units</string>
+    <!-- Value in SharedPreferences for metric temperature unit option [CHAR LIMIT=NONE] -->
+    <string name="pref_units_metric" translatable="false">metric</string>
+    <!-- Value in SharedPreferences for imperial temperature unit option [CHAR LIMIT=NONE] -->
+    <string name="pref_units_imperial" translatable="false">imperial</string>
 
     <!--Label for unit preference [CHAR LIMIT=NONE]-->
     <string name="pref_unit_label">Temperature Unit</string>

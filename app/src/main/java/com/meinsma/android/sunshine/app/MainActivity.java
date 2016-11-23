@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.i(LOG_TAG, "create");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
@@ -47,6 +48,36 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onPause() {
+        Log.i(LOG_TAG, "pause");
+        super.onPause();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.i(LOG_TAG, "stop");
+        super.onStop();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.i(LOG_TAG, "resume");
+        super.onResume();
+    }
+
+    @Override
+    protected void onStart() {
+        Log.i(LOG_TAG, "start");
+        super.onStart();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.i(LOG_TAG, "destroy");
+        super.onDestroy();
     }
 
     private void openLocationOnMap() {
